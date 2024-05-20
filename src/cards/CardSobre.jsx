@@ -1,30 +1,43 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Link, Typography } from '@mui/material';
+import CardCurriculo from './CardCurriculo';
+import CardImg from './CardImg';
 
 function CardSobre() {
-
     return (
-            <Box sx={{background:'#e7771c'}}>
-                <h1 style={{display: 'flex', justifyContent:'center', flexDirection: 'row', columnGap: '5px' }}>Sobre</h1>
-                <Typography sx={{display:'flex', justifyContent:'center', textAlign:'justify', width: 850, fontSize:'17px'}}>
-                    Bem-vindo! Sou Daniela Soares, uma desenvolvedora
-                    apaixonado por criar experiências digitais memoráveis e soluções inovadoras. Nesta página,
-                    você encontrará uma amostra do meu trabalho e minha jornada profissional até agora.
-                    <br/> <br/>
-                    Com uma combinação de criatividade, habilidades técnicas e atenção aos detalhes, busco 
-                    constantemente superar expectativas e criar impacto por meio do design e da tecnologia. 
-                    Cada projeto reflete meu compromisso com a excelência e minha busca incessante pela
-                    perfeição.
-                    <br/> <br/>
-                    Explore as diferentes seções para descobrir meus projetos mais recentes, 
-                    experiências profissionais, habilidades técnicas e muito mais. Estou sempre em busca de
-                    novas oportunidades e desafios emocionantes, então não hesite em entrar em contato se 
-                    você estiver interessado em colaborar ou saber mais sobre meu trabalho.
-                    <br/> <br/>
-                    Obrigado por visitar meu portfólio e por dedicar seu tempo para conhecer um pouco mais 
-                    sobre mim e meu trabalho. Espero que você aproveite sua visita e que possamos nos conectar
-                    em breve!
-                </Typography>
+        <Box>
+            <h1 style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row', columnGap: '5px' }}>Sobre</h1>
+            <Typography sx={{ textAlign: 'justify', width: 800, fontSize: '17px', margin: '0 auto' }}>
+                Bem-vindo! Sou Daniela Soares, desenvolvedora web front-end. Minha jornada de desenvolvimento começou em 2020 quando ingressei no
+                <Link href="https://www.ifg.edu.br/formosa" target="_blank" sx={{ textDecoration: 'none', color: '#626969', margin: '4px' }}>
+                    IFG
+                </Link>
+                no curso de Tecnologia em Análise e Desenvolvimento de Sistemas, no qual me formei.
+                <br /><br />
+                Atualmente, tenho experiência em tecnologias como React, Typescript, JavaScript, HTML, CSS, Next.js e Node.js.
+                Continuo a estudar constantemente para aprender melhores práticas e ferramentas, buscando me aperfeiçoar.
+                <br /><br />
+                Com uma combinação de criatividade, habilidades técnicas e atenção aos detalhes, busco superar expectativas e criar
+                impacto por meio da tecnologia.
+                <br /><br />
+                Obrigada por visitar meu portfólio e dedicar seu tempo para conhecer um pouco mais sobre mim e meu trabalho.
+                Espero que aproveite sua visita. Sinta-se à vontade para visualizar o meu currículo e minhas redes abaixo.
+                Espero que possamos nos conectar em breve!
+            </Typography>
+            <Box
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'flex-end',
+                    position: 'absolute',
+                    top: 50,
+                    right: 50,
+                    padding: 2
+                }}>
+                <CardImg />
             </Box>
+            <Box>
+                <CardCurriculo />
+            </Box>
+        </Box>
     );
 }
 

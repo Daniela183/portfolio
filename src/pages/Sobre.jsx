@@ -7,7 +7,7 @@ function Sobre() {
     return (
         <Layout>
             <Box>
-            <Card/>
+                <Card />
             </Box>
         </Layout>
     );

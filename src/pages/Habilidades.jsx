@@ -2,6 +2,7 @@ import { Box } from '@mui/material';
 import Layout from '../components/Layout';
 import CardHabilidades from '../cards/CardHabilidades';
 
+
 function Habilidades() {
 
     return (
